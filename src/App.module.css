@@ -1,0 +1,247 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* height: 100%; */
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+h1 {
+  color: goldenrod;
+  /* margin: 0.5em 0; */
+}
+
+h2 {
+  font-size: 6rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+h3 {
+  /* font-size: 4rem;
+  font-weight: normal;
+  color: #dddddd;
+  font-weight: 300; 
+  margin: 0; */
+}
+
+h4 {
+  color: goldenrod;
+  font-weight: normal;
+}
+
+.TopBar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  min-height: 4rem;
+  padding: 0 20px;
+  z-index: 10;
+  background-color: #1e1e1e;
+}
+
+.RightBar {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  writing-mode: vertical-rl;
+  /* left: auto; */
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  margin: 0px 20;
+  background-color: white;
+}
+
+.Button {
+  text-decoration: none;
+  color: goldenrod;
+  border: 1px solid goldenrod;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  margin: 0 2rem;
+}
+
+.Button:hover {
+  color: #aaaaaa;
+  border-color: #aaaaaa;
+}
+
+.LeftBanner {
+  background-color: #333;
+}
+
+.RightBanner {
+  background-color: #333;
+}
+
+.Intro {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding: 0 150px;
+  min-height: 100vh;
+}
+.Name {
+  font-size: 6rem;
+  font-weight: 500;
+  margin: 0;
+}
+.Blurb {
+  font-size: 4rem;
+  font-weight: normal;
+  color: #dddddd;
+  /* font-weight: 300; */
+  margin: 0;
+}
+.MainContent {
+  /* width: 40%; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  padding: 0 150px;
+}
+
+.Section {
+  padding-top: 100px;
+  min-height: calc(100vh - 100px);
+}
+
+.AboutContent {
+  display: flex;
+  /* min-height: 100vh; */
+}
+
+.AboutContent p {
+  line-height: 1.5rem;
+}
+
+.Nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.Nav button {
+  display: flex;
+  /* width: 11rem; */
+  /* padding-left: 2rem; */
+  margin: 1rem;
+  border: none;
+  padding: 1 rem;
+  background: none;
+  color: #ffffff;
+  text-align: left;
+}
+
+.ExperienceContent {
+  display: flex;
+}
+
+.ExperienceSummary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ExperienceSummary li {
+  padding-bottom: 10px;
+}
+
+.ExperienceSummary ul li::before {
+  content: "- ";
+}
+
+.Employers {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* width: max-content; */
+  position: relative;
+  /* z-index: 3; */
+  width: max-content;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* .Employers ul {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+} */
+
+.Contact {
+  padding: 100px 0px;
+  align-self: center;
+  text-align: center;
+  width: 70%;
+}
+
+.Contact p {
+  font-size: 1.5rem;
+}
+
+.TextLink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.TextLink:hover {
+  text-decoration: underline;
+}
+
+.TextLink::before,
+.TextLink::after {
+  content: "";
+  position: relative;
+  bottom: 0px;
+  left: 0;
+  border-top-width: 2px;
+  z-index: 5;
+}
+
+.TextLink::before {
+  border-top-style: dashed;
+  width: 100%;
+}
+
+/* .TextLinks:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+}
+
+.TextLinks:hover:after {
+  width: 100%;
+  left: 0;
+  background: #fff;
+} */
+
+.BottomBar {
+  padding: 4rem 0 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.BottomBar a {
+  text-decoration: none;
+  color: #999999;
+}
+
+.BottomBar a:hover {
+  color: #cccccc;
+}

@@ -1,0 +1,43 @@
+button {
+  display: flex;
+  /* color: blue; */
+  margin: 0;
+  padding: 20px 0;
+  background-color: inherit;
+  color: #ffffff;
+  opacity: 0.7;
+  border: none;
+  border-left: solid #ffffff 3px;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+  font-size: 16px;
+}
+
+button:hover,
+button:focus {
+  background: #111;
+  opacity: 1;
+  color: goldenrod;
+}
+/*
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+*/
+
+button:active {
+  opacity: 1;
+  /* transform: scale(0.99); */
+  /* border-left: solid blue 3px; */
+}
+
+.activated {
+  border-left: solid goldenrod 3px;
+  color: goldenrod;
+}
+
+span {
+  padding-left: 10px;
+}
