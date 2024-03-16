@@ -9,9 +9,17 @@
   position: relative;
   grid-area: 1 / 6 / -1 / -1;
   text-align: right;
+  z-index: 10;
 }
 
-.Title {
+@media (max-width: 600px) {
+  .Content {
+    position: relative;
+    grid-area: 1 / 2/ 1 / 12;
+    text-align: left;
+    /* width: 100%; */
+    /* border: 1px solid red; */
+  }
 }
 
 .Summary {
@@ -30,10 +38,20 @@
   list-style: none;
   justify-content: flex-end;
   z-index: 3;
+  /* overflow-wrap: normal;
+   */
+  /* text-overflow: ellipsis; */
+  flex-wrap: wrap;
 }
 
 .Technologies li {
   padding: 0.75rem;
+}
+
+@media (max-width: 600px) {
+  .Technologies li {
+    padding: 5px;
+  }
 }
 
 .GitHubIcon {
@@ -46,6 +64,13 @@
   position: relative;
   grid-area: 1 / 1 / -1 / 8;
   filter: grayscale(100%) contrast(1) brightness(50%);
+}
+
+@media (max-width: 600px) {
+  .ImageContainer {
+    position: relative;
+    grid-area: 1 / 1 / 1 / -1;
+  }
 }
 
 .ImageContainer:hover {

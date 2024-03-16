@@ -1,6 +1,6 @@
-button {
+.StyledButton {
   display: flex;
-  /* color: blue; */
+  color: blue;
   margin: 0;
   padding: 20px 0;
   background-color: inherit;
@@ -14,8 +14,8 @@ button {
   font-size: 16px;
 }
 
-button:hover,
-button:focus {
+.StyledButton:hover,
+.StyledButton:focus {
   background: #111;
   opacity: 1;
   color: goldenrod;
@@ -27,7 +27,7 @@ button:focus {
 }
 */
 
-button:active {
+.StyledButton:active {
   opacity: 1;
   /* transform: scale(0.99); */
   /* border-left: solid blue 3px; */

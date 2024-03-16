@@ -12,6 +12,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import NavLink from "./components/NavLink";
+import HamburgerExpanded from "./components/HamburgerExpanded";
 import Sidebar from "./components/Sidebar";
 import Employer from "./components/Employer";
 import Project from "./components/Project";
@@ -25,10 +26,19 @@ function App() {
     "Georgia Tech - LCC",
     "Georgia Tech - CRC",
   ];
+  const [activeMenu, setActiveMenu] = useState<boolean>(false);
   const [activeExperience, setActiveExperience] = useState<number>(0);
   const activeExperienceHandler = (index: number) => {
     console.log(index);
     setActiveExperience(index);
+  };
+  const hamburgerButtonClickHandler = () => {
+    console.log(!activeMenu);
+    setActiveMenu((prevMenu) => !prevMenu);
+  };
+
+  const onLinkClickHandler = () => {
+    setActiveMenu(false);
   };
   return (
     <div className={classes.App}>
@@ -38,13 +48,51 @@ function App() {
         <NavLink link="#projects">Projects</NavLink>
         <NavLink link="#contact">Contact</NavLink>
         <a
-          className={classes.Button}
+          className={classes.StyledButton}
           href="assets/Gary_Jones Resume.pdf"
           target="_blank"
         >
           Resume
         </a>
       </div>
+      <div className={classes.Hamburger}>
+        <button
+          className={classes.HamburgerButton}
+          onClick={hamburgerButtonClickHandler}
+        >
+          <MenuIcon />
+        </button>
+      </div>
+
+      {activeMenu && (
+        <div className={classes.HamburgerMenu}>
+          {/* <HamburgerExpanded></HamburgerExpanded> */}
+          <div>
+            <ul>
+              <NavLink link="#about" activeMenuSetter={onLinkClickHandler}>
+                About
+              </NavLink>
+              <NavLink link="#experience" activeMenuSetter={onLinkClickHandler}>
+                Experience
+              </NavLink>
+              <NavLink link="#projects" activeMenuSetter={onLinkClickHandler}>
+                Projects
+              </NavLink>
+              <NavLink link="#contact" activeMenuSetter={onLinkClickHandler}>
+                Contact
+              </NavLink>
+              <a
+                className={classes.StyledButton}
+                href="assets/Gary_Jones Resume.pdf"
+                target="_blank"
+              >
+                Resume
+              </a>
+            </ul>
+          </div>
+        </div>
+      )}
+
       <Sidebar />
       <div className={classes.RightBar}>
         {/* <a>gjgaryjones0@gmail.com</a> */}
@@ -55,7 +103,7 @@ function App() {
         {/* <span className={classes.Name}>Gary Jones.</span> */}
         <h2>Gary Jones.</h2>
         <h3 className={classes.Blurb}>
-          I love solving challenging problems and learning new things.
+          I crave solving challenging problems and learning new things.
         </h3>
       </div>
       <div className={classes.MainContent}>
@@ -81,8 +129,12 @@ function App() {
 
               <p></p>
             </div>
-
-            <img src={logo} width={"200rem"} height={"200rem"}></img>
+            <img
+              className={classes.ProfileImage}
+              src={logo}
+              width={"200rem"}
+              height={"200rem"}
+            ></img>
           </div>
         </div>
         <div id="experience" className={classes.Section}>
@@ -231,9 +283,12 @@ function App() {
           <p>
             If you are curious about any projects in my portfolio, want to
             discuss any opportunities for me to contribute and further grow my
-            skills, or just want to say "hi", I would love to connect.
+            skills, or just want to say "hi" - I would love to connect.
           </p>
-          <a className={classes.Button} href="mailto:gjgaryjones0@gmail.com">
+          <a
+            className={classes.StyledButton}
+            href="mailto:gjgaryjones0@gmail.com"
+          >
             Say Hello
           </a>
         </div>

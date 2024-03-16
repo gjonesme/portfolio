@@ -14,7 +14,7 @@ const Employer = (props: EmployerProps) => {
   };
   return (
     <button
-      className={`${classes.Employer} ${
+      className={`${classes.StyledButton} ${classes.Employer} ${
         props.activeIndex === props.index && classes.activated
       }`}
       onClick={onClickHandler}
