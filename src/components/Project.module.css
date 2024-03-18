@@ -60,10 +60,20 @@
   text-decoration: none;
 }
 
-.ImageContainer {
-  position: relative;
-  grid-area: 1 / 1 / -1 / 8;
-  filter: grayscale(100%) contrast(1) brightness(50%);
+@media (min-width: 600px) {
+  .ImageContainer {
+    position: relative;
+    grid-area: 1 / 1 / -1 / 8;
+    filter: grayscale(100%) contrast(1) brightness(50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .ImageContainer {
+    position: relative;
+    grid-area: 1 / 1 / -1 / 8;
+    filter: grayscale(100%) contrast(1) brightness(30%);
+  }
 }
 
 @media (max-width: 600px) {

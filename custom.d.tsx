@@ -4,6 +4,11 @@ declare module "*.svg" {
   export default content;
 }
 
+declare module "*.png" {
+  const png: any;
+  export default png;
+}
+
 declare module "*.css" {
   const css: any;
   export default css;

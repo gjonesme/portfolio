@@ -3,6 +3,7 @@ import "./App.css";
 import { useState } from "react";
 import classes from "./App.module.css";
 import logo from "./logo.svg";
+import profilePic from "/images/IMG_3301.png";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
@@ -67,20 +68,30 @@ function App() {
       {activeMenu && (
         <div className={classes.HamburgerMenu}>
           {/* <HamburgerExpanded></HamburgerExpanded> */}
-          <div>
-            <ul>
+
+          <ul>
+            <li>
               <NavLink link="#about" activeMenuSetter={onLinkClickHandler}>
                 About
               </NavLink>
+            </li>
+            <li>
               <NavLink link="#experience" activeMenuSetter={onLinkClickHandler}>
                 Experience
               </NavLink>
+            </li>
+            <li>
               <NavLink link="#projects" activeMenuSetter={onLinkClickHandler}>
                 Projects
               </NavLink>
+            </li>
+            <li>
               <NavLink link="#contact" activeMenuSetter={onLinkClickHandler}>
                 Contact
               </NavLink>
+            </li>
+
+            <li>
               <a
                 className={classes.StyledButton}
                 href="assets/Gary_Jones Resume.pdf"
@@ -88,8 +99,8 @@ function App() {
               >
                 Resume
               </a>
-            </ul>
-          </div>
+            </li>
+          </ul>
         </div>
       )}
 
@@ -110,31 +121,38 @@ function App() {
         <div id="about" className={classes.Section}>
           <h1>About Me</h1>
           <div className={classes.AboutContent}>
-            <div>
+            <div className={classes.AboutSummary}>
               <p>
                 Hello! My name is Gary and I like to design, build, and create
-                functional things. I have enjoyed creating through design of
-                commercial-grade products, 3d printing, woodworking, and
-                electronic hardware development.
+                functional things. I have enjoyed creating and problem solving
+                through design of commercial-grade products, 3d printing,
+                woodworking, and electronic hardware development.
               </p>
               <p>
-                Over the last several years I have authored specifications for
-                embedded electronic controller development. I have worked
-                closely with both software and hardware developers to bring new
-                products and features to market. More recently, I have started
-                building digital experiences on my own. I find great
-                satisfaction in creating with web-based technologies and hope to
-                find a place where I can refine and grow my skills.
+                Over the last several years: I have authored specifications for
+                embedded electronic controller development, worked closely with
+                both software and hardware developers to bring new products and
+                features to market, and started building digital experiences on
+                my own. I find great satisfaction in building with web-based
+                technologies and hope to find a place where I can refine and
+                grow my skills.
               </p>
-
-              <p></p>
+              <p>Here are some technologies that I have been working with:</p>
+              <ul>
+                <li>Javascript</li>
+                <li>Typescript</li>
+                <li>React</li>
+              </ul>
             </div>
-            <img
-              className={classes.ProfileImage}
-              src={logo}
-              width={"200rem"}
-              height={"200rem"}
-            ></img>
+            <div className={classes.ImageContainer}>
+              <img
+                className={classes.ProfileImage}
+                src={"images/IMG_3301.png"}
+                // width={"30%"}
+                // height={"auto"}
+                // height={"200rem"}
+              ></img>
+            </div>
           </div>
         </div>
         <div id="experience" className={classes.Section}>
@@ -163,14 +181,14 @@ function App() {
                   >
                     <ul>
                       <li>
-                        Lead engineer tasked to redesign flagship product line
-                        to meet energy efficiency and minimum global warming
-                        potential targets
+                        Lead engineer in redesign of flagship product line to
+                        meet energy efficiency targets and minimize global
+                        warming potential
                       </li>
                       <li>
-                        Product engineer supporting hardware and embedded
-                        software engineering teams to develop insustry leading
-                        controls technology
+                        Created feature specification and supported hardware and
+                        embedded software engineering teams to develop insustry
+                        leading controls technology
                       </li>
                       <li>
                         Developed and maintained various internal software tools
@@ -216,7 +234,7 @@ function App() {
                         facility and 40+ employees
                       </li>
                       <li>
-                        Managed interaction and function across five separate
+                        Managed employees across across five separate functional
                         departments
                       </li>
                     </ul>
