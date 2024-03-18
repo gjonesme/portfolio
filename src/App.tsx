@@ -114,7 +114,8 @@ function App() {
         {/* <span className={classes.Name}>Gary Jones.</span> */}
         <h2>Gary Jones.</h2>
         <h3 className={classes.Blurb}>
-          I crave solving challenging problems and learning new things.
+          I enjoy solving problems, creating experiences, and learning new
+          skills.
         </h3>
       </div>
       <div className={classes.MainContent}>
@@ -123,21 +124,24 @@ function App() {
           <div className={classes.AboutContent}>
             <div className={classes.AboutSummary}>
               <p>
-                Hello! My name is Gary and I like to design, build, and create
-                functional things. I have enjoyed creating and problem solving
-                through design of commercial-grade products, 3d printing,
-                woodworking, and electronic hardware development.
+                As an experienced engineer, I design, build, and create products
+                and tools that solve problems and enhance user experience. I
+                utilize mediums including commercial product design, software
+                engineering, 3D printing, woodworking, and electronic hardware
+                development.
               </p>
               <p>
-                Over the last several years: I have authored specifications for
-                embedded electronic controller development, worked closely with
-                both software and hardware developers to bring new products and
-                features to market, and started building digital experiences on
-                my own. I find great satisfaction in building with web-based
-                technologies and hope to find a place where I can refine and
+                Over the last several years of my career, I authored
+                specifications for embedded electronic controller development,
+                worked closely with both software and hardware developers to
+                bring new products and features to market, and leveraged
+                software tools to enhance internal processes. I also started to
+                develop my coding skills and build digital experiences on my
+                own. I find great satisfaction in building with web-based
+                technologies and am looking for an opportunity to refine and
                 grow my skills.
               </p>
-              <p>Here are some technologies that I have been working with:</p>
+              <p>Some technologies that I have been working with:</p>
               <ul>
                 <li>Javascript</li>
                 <li>Typescript</li>
@@ -181,19 +185,20 @@ function App() {
                   >
                     <ul>
                       <li>
-                        Lead engineer in redesign of flagship product line to
-                        meet energy efficiency targets and minimize global
-                        warming potential
+                        Managed engineering and design updates for flagship
+                        product line with $200+ million annual revenue to meet
+                        energy efficiency targets and minimize global warming
+                        potential
                       </li>
                       <li>
-                        Created feature specification and supported hardware and
-                        embedded software engineering teams to develop insustry
-                        leading controls technology
+                        Designed and developed industry-leading controls
+                        technology, created feature specification, and supported
+                        hardware and embedded software engineering teams
                       </li>
                       <li>
-                        Developed and maintained various internal software tools
-                        and applications used by vendors, engineers, and
-                        internal sales staff
+                        Developed and continuously improved internal software
+                        tools and applications to improve processes, optimize
+                        data retrieval, and drive revenue
                       </li>
                     </ul>
                   </ExperienceSummary>
@@ -269,9 +274,8 @@ function App() {
             imageSource="/images/CrossStitchBuilder.png"
             gitLink="https://github.com/gjonesme/CrossStitchBuilder"
           >
-            A web app that allows conversion of uploaded images to cross-stitch
-            patterns through various filters, dithering algorithms, and
-            convolution.
+            A web app that converts uploaded images to cross-stitch patterns
+            through various filters, dithering algorithms, and convolution.
           </Project>
           <Project
             projectName="MMM-WeatherAlerts"
@@ -300,8 +304,8 @@ function App() {
           <h1>Reach Out</h1>
           <p>
             If you are curious about any projects in my portfolio, want to
-            discuss any opportunities for me to contribute and further grow my
-            skills, or just want to say "hi" - I would love to connect.
+            discuss an opportunity, or just want to say hi, I would love to
+            connect.
           </p>
           <a
             className={classes.StyledButton}
