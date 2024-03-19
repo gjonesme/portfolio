@@ -138,7 +138,7 @@ function App() {
               <img
                 className={classes.ProfileImage}
                 src={"images/IMG_3301.png"}
-                alt={"profile picture"}
+                alt="profile picture"
               ></img>
             </div>
           </div>
@@ -166,7 +166,7 @@ function App() {
                     title="New Product Development Engineer"
                     company="Heatcraft"
                     companyLink="https://www.heatcraftrpd.com/"
-                    range={"May 2016 - present"}
+                    range="May 2016 - present"
                   >
                     <ul>
                       <li>
@@ -195,7 +195,7 @@ function App() {
                     title="Facilitator"
                     company="Georgia Tech - Leadership Challenge Course"
                     companyLink="https://www.crc.gatech.edu/outdoor/lcc"
-                    range={"July 2015 - May 2016"}
+                    range="July 2015 - May 2016"
                   >
                     <ul>
                       <li>
@@ -216,7 +216,7 @@ function App() {
                     title="Building Supervisor"
                     company="Georgia Tech - Campus Recreation Center"
                     companyLink="https://crc.gatech.edu/home"
-                    range={"April 2014 - August 2015"}
+                    range="April 2014 - August 2015"
                   >
                     <ul>
                       <li>
