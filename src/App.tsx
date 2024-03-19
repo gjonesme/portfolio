@@ -138,6 +138,7 @@ function App() {
               <img
                 className={classes.ProfileImage}
                 src={"images/IMG_3301.png"}
+                alt={"profile picture"}
               ></img>
             </div>
           </div>

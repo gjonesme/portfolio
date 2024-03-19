@@ -6,12 +6,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Sidebar = () => {
   return (
     <div className={classes.Sidebar}>
-      <a href="https://github.com/gjonesme" target="_blank">
+      <a href="https://github.com/gjonesme" target="_blank" rel="noreferrer">
         <GitHubIcon></GitHubIcon>
       </a>
       <a
         href="https://www.linkedin.com/in/gary-jones-318b9758/"
         target="_blank"
+        rel="noreferrer"
       >
         <LinkedInIcon></LinkedInIcon>
       </a>

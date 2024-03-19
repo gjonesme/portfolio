@@ -14,7 +14,11 @@ const ExperienceSummary = (props: {
         {props.title ? props.title : "Title Here"}
 
         <span className={classes.Company}>
-          <a href={props.companyLink} target="_blank">{`@ ${props.company}`}</a>
+          <a
+            href={props.companyLink}
+            target="_blank"
+            rel="noreferrer"
+          >{`@ ${props.company}`}</a>
         </span>
       </h2>
       <p className={classes.Duration}>{props.range}</p>

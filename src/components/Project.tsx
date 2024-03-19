@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./Project.module.css";
-import logo from "../logo.svg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Project = (props: {
@@ -21,7 +20,12 @@ const Project = (props: {
             <li key={index}>{tech}</li>
           ))}
         </ul>
-        <a className={classes.GitHubIcon} href={props.gitLink} target="_blank">
+        <a
+          className={classes.GitHubIcon}
+          href={props.gitLink}
+          target="_blank"
+          rel="noreferrer"
+        >
           <GitHubIcon></GitHubIcon>
         </a>
       </div>
@@ -31,6 +35,7 @@ const Project = (props: {
             className={classes.Screenshot}
             alt="project screenshot"
             src={props.imageSource}
+            rel="noreferrer"
           />
         </a>
       </div>
