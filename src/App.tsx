@@ -2,18 +2,8 @@ import React from "react";
 import "./App.css";
 import { useState } from "react";
 import classes from "./App.module.css";
-import logo from "./logo.svg";
-import profilePic from "/images/IMG_3301.png";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import NavLink from "./components/NavLink";
-import HamburgerExpanded from "./components/HamburgerExpanded";
 import Sidebar from "./components/Sidebar";
 import Employer from "./components/Employer";
 import Project from "./components/Project";
@@ -21,7 +11,6 @@ import Project from "./components/Project";
 import ExperienceSummary from "./components/ExperienceSummary";
 
 function App() {
-  console.log(logo);
   const employers = [
     "Heatcraft Refrigeration Products",
     "Georgia Tech - LCC",
@@ -30,11 +19,9 @@ function App() {
   const [activeMenu, setActiveMenu] = useState<boolean>(false);
   const [activeExperience, setActiveExperience] = useState<number>(0);
   const activeExperienceHandler = (index: number) => {
-    console.log(index);
     setActiveExperience(index);
   };
   const hamburgerButtonClickHandler = () => {
-    console.log(!activeMenu);
     setActiveMenu((prevMenu) => !prevMenu);
   };
 
@@ -96,6 +83,7 @@ function App() {
                 className={classes.StyledButton}
                 href="assets/Gary_Jones Resume.pdf"
                 target="_blank"
+                rel="noreferrer"
               >
                 Resume
               </a>
@@ -110,8 +98,6 @@ function App() {
       </div>
       <div className={classes.Intro}>
         <h4>Hi, my name is</h4>
-        {/* <span>Hi, my name is</span> */}
-        {/* <span className={classes.Name}>Gary Jones.</span> */}
         <h2>Gary Jones.</h2>
         <h3 className={classes.Blurb}>
           I enjoy solving problems, creating experiences, and learning new
@@ -143,8 +129,8 @@ function App() {
               </p>
               <p>Some technologies that I have been working with:</p>
               <ul>
-                <li>Javascript</li>
-                <li>Typescript</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
                 <li>React</li>
               </ul>
             </div>
@@ -152,9 +138,6 @@ function App() {
               <img
                 className={classes.ProfileImage}
                 src={"images/IMG_3301.png"}
-                // width={"30%"}
-                // height={"auto"}
-                // height={"200rem"}
               ></img>
             </div>
           </div>
@@ -166,6 +149,7 @@ function App() {
               <ul>
                 {employers.map((employer, index) => (
                   <Employer
+                    key={index}
                     title={employer}
                     index={index}
                     handleActiveExperience={activeExperienceHandler}
@@ -263,6 +247,7 @@ function App() {
               className={classes.TextLink}
               href="https://developer.spotify.com/documentation/web-api"
               target="_blank"
+              rel="noreferrer"
             >
               Spotify API
             </a>
@@ -293,6 +278,7 @@ function App() {
               className={classes.TextLink}
               href="https://magicmirror.builders/"
               target="_blank"
+              rel="noreferrer"
             >
               MagicMirror<sup>2</sup>
             </a>{" "}
@@ -310,6 +296,7 @@ function App() {
           <a
             className={classes.StyledButton}
             href="mailto:gjgaryjones0@gmail.com"
+            rel="noreferrer"
           >
             Say Hello
           </a>
@@ -317,11 +304,15 @@ function App() {
       </div>
       <div></div>
       <div className={classes.BottomBar}>
-        <a href="https://github.com/gjonesme" target="_blank">
+        <a href="https://github.com/gjonesme" target="_blank" rel="noreferrer">
           Built by Gary Jones
         </a>
 
-        <a href="https://v4.brittanychiang.com/" target="_blank">
+        <a
+          href="https://v4.brittanychiang.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
           Site Layout and Design Inspired by Brittany Chiang
         </a>
       </div>

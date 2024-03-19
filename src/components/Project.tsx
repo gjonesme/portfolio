@@ -10,7 +10,6 @@ const Project = (props: {
   gitLink?: string;
   children?: any;
 }) => {
-  props.imageSource && console.log(props.imageSource);
   return (
     <div className={classes.Project}>
       <div className={classes.Content}>
@@ -18,8 +17,8 @@ const Project = (props: {
         <p className={classes.Summary}>{props.children}</p>
 
         <ul className={classes.Technologies}>
-          {props.technologies.map((tech) => (
-            <li>{tech}</li>
+          {props.technologies.map((tech, index) => (
+            <li key={index}>{tech}</li>
           ))}
         </ul>
         <a className={classes.GitHubIcon} href={props.gitLink} target="_blank">
